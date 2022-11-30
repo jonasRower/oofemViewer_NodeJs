@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>  
+    <!--<script src="script.js"></script> -->
+
+    <div id="json">
+        <p>Po Submitu čeká 5 sekund</p>        
+    </div>
+
+    <form id="contact-form" method="POST" action="/contact">
+        <label for="who">Who do you want to contact?</label>
+        <input type="text" name="who">
+        <label for="department">Which department?</label>
+        <input type="text" name="department">
+        <label for="email">Your email?</label>
+        <input type="text" name="email">
+        <input type="submit" name="submit">
+    </form>
+
+
+
+    <!-- ########################################################################## 
+                        zde zacina obsah menu                                   -->
+
+    <div class="parent">
+        <div class="div1">
+            <p>OOFEM Results</p>
+
+            <p>Je potřeba select OFT načítat z databáze do GUI</p>
+        </div>
+
+        <!-- ########################################################################## 
+                                    MENU                                             -->
+        
+        <div class="div2">
+            <!--             Menu se vykresluje pomocí JQuery                        -->
+        </div>
+
+
+        <!-- ########################################################################## 
+                            Hlavni okno pro vykresleni                              -->
+
+        <div class="div3">
+            <canvas id="drawing"></canvas>
+        </div>
+
+
+        <!-- ########################################################################## 
+                            okno pro vykresleni detailu                              -->
+
+        <div class="div4">
+            <canvas id="detail" width="800" height="300" style="border:1px solid #d3d3d3;">
+                Your browser does not support the HTML5 canvas tag.</canvas>
+        </div>
+
+
+        <!-- ########################################################################## 
+                            okno pro vodorovny rez                                  -->
+
+        <div class="div5">
+            <canvas id="test" width="800" height="300" style="border:1px solid #d3d3d3;">
+                Your browser does not support the HTML5 canvas tag.</canvas>
+        </div>
+
+
+        <!-- ########################################################################## 
+                            okno pro svisly rez                                     -->
+
+        <div class="div6">
+            <canvas id="test" width="800" height="300" style="border:1px solid #d3d3d3;">
+                Your browser does not support the HTML5 canvas tag.</canvas>
+        </div>
+
+    </div>
+
+    <!--
+    <form id="novaTabulka-form" method="POST" action="/">
+    -->
+
+    
+    <form id="novaTabulka-form" method="POST" action="/submitMenu">
+
+        <!-- inputboxy pro predani dat na vystupy - bezne hodnoty   --> 
+        <input type="text" id="inputId" name="inputId">
+        <input type="text" id="inputValue" name="inputValue">
+
+        <footer>
+            <br><br>
+            <input type="submit" value="Potvrď">
+        </footer>
+        
+    </form> 
+
+    <!-- pouzije dany css styl -->
+    <script type="text/javascript" src="js/scriptCss.js"></script>  
+
+    <!--
+    na zaklade JSONU poslaneho z backendu se vykresli menu -->
+    <script src="js/vykresliMenu2.js"></script>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/vykresliGrafiku.js"></script>
+
+
+</body>
+</html>
