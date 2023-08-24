@@ -1,0 +1,120 @@
+{
+   "pocetElementu":18,
+   "elementP":[
+      {
+         "poradiElementu":"0",
+         "pDescription":"Preprocessor/Postprocessor",
+         "pId":"",
+         "pClass":""
+      },
+      {
+         "poradiElementu":"2",
+         "pDescription":"Type of Loads",
+         "pId":"",
+         "pClass":"inputs"
+      },
+      {
+         "poradiElementu":"5",
+         "pDescription":"Select DOF",
+         "pId":"",
+         "pClass":"inputsDOF"
+      },
+      {
+         "poradiElementu":"7",
+         "pDescription":"Filter by",
+         "pId":"",
+         "pClass":"elementPreview"
+      },
+      {
+         "poradiElementu":"9",
+         "pDescription":"Element Preview",
+         "pId":"",
+         "pClass":"elementPreview"
+      },
+      {
+         "poradiElementu":"11",
+         "pDescription":"Move Text",
+         "pId":"",
+         "pClass":"moveText"
+      }
+   ],
+   "elementSelect":[
+      {
+         "poradiElementu":"1",
+         "selectId":"selectPrePost",
+         "selectClass":"PrePost",
+         "radkyOption":[
+            "inputs",
+            "outputs"
+         ]
+      },
+      {
+         "poradiElementu":"3",
+         "selectId":"selectLoad",
+         "selectClass":"inputs",
+         "radkyOption":[
+            "ElementLoads",
+            "NodalLoads",
+            "ForcedDisplacement",
+            "TemperatureLoad"
+         ]
+      },
+      {
+         "poradiElementu":"6",
+         "selectId":"selectDOFinputs",
+         "selectClass":"inputs",
+         "radkyOption":[
+            "1",
+            "3",
+            "5"
+         ]
+      },
+      {
+         "poradiElementu":"10",
+         "selectId":"selectElementPreview",
+         "selectClass":"elementPreview",
+         "radkyOption":[
+            -1,
+            10,
+            20,
+            30,
+            40,
+            50,
+            60,
+            70,
+            80,
+            90,
+            110
+         ]
+      }
+   ],
+   "elementForm":[
+      {
+         "poradiElementu":"4",
+         "formId":"specifyDOF",
+         "formClass":"inputs",
+         "radkyInput":[
+            "All DOF",
+            "Specify DOF"
+         ]
+      },
+      {
+         "poradiElementu":"8",
+         "formId":"filterBy",
+         "formClass":"elementPreview",
+         "radkyInput":[
+            "Element -> Node",
+            "Node -> Element"
+         ]
+      },
+      {
+         "poradiElementu":"12",
+         "formId":"moveText",
+         "formClass":"moveText",
+         "radkyInput":[
+            "Old algorithm",
+            "New algorithm"
+         ]
+      }
+   ]
+}

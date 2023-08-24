@@ -1,0 +1,95 @@
+{
+   "pocetElementu":18,
+   "elementP":[
+      {
+         "poradiElementu":"0",
+         "pDescription":"Preprocessor/Postprocessor",
+         "pId":"",
+         "pClass":""
+      },
+      {
+         "poradiElementu":"2",
+         "pDescription":"Type of Loads",
+         "pId":"",
+         "pClass":"inputs"
+      },
+      {
+         "poradiElementu":"4",
+         "pDescription":"Filter by",
+         "pId":"",
+         "pClass":"elementPreview"
+      },
+      {
+         "poradiElementu":"6",
+         "pDescription":"Element Preview",
+         "pId":"",
+         "pClass":"elementPreview"
+      },
+      {
+         "poradiElementu":"8",
+         "pDescription":"Move Text",
+         "pId":"",
+         "pClass":"moveText"
+      }
+   ],
+   "elementSelect":[
+      {
+         "poradiElementu":"1",
+         "selectId":"selectPrePost",
+         "selectClass":"PrePost",
+         "radkyOption":[
+            "inputs",
+            "outputs"
+         ]
+      },
+      {
+         "poradiElementu":"3",
+         "selectId":"selectLoad",
+         "selectClass":"inputs",
+         "radkyOption":[
+            "ElementLoads",
+            "NodalLoads",
+            "ForcedDisplacement",
+            "TemperatureLoad"
+         ]
+      },
+      {
+         "poradiElementu":"7",
+         "selectId":"selectElementPreview",
+         "selectClass":"elementPreview",
+         "radkyOption":[
+            -1,
+            10,
+            20,
+            30,
+            40,
+            50,
+            60,
+            70,
+            80,
+            90,
+            110
+         ]
+      }
+   ],
+   "elementForm":[
+      {
+         "poradiElementu":"5",
+         "formId":"filterBy",
+         "formClass":"elementPreview",
+         "radkyInput":[
+            "Element -> Node",
+            "Node -> Element"
+         ]
+      },
+      {
+         "poradiElementu":"9",
+         "formId":"moveText",
+         "formClass":"moveText",
+         "radkyInput":[
+            "Old algorithm",
+            "New algorithm"
+         ]
+      }
+   ]
+}
